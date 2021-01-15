@@ -32,7 +32,11 @@ plt.title("Cost Breakdown")
 for i in range(len(amounts)):
     plt.annotate("%.2f"%amounts[i], xy=(categories[i],amounts[i]), ha='center', va='bottom')
 plt.gcf().subplots_adjust(bottom=0.30)
-plt.ylim(-1,1000)
+
+#automatically adjust ylim max
+ylimMax = grandTotal + 200
+
+plt.ylim(-1,ylimMax)
 plt.show()
 
 
