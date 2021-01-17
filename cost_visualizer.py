@@ -56,14 +56,17 @@ last_date = date(last_year, last_month, last_day)
 delta = last_date - first_date
 num_of_days = delta.days + 1
 
-with open("cost_stats.txt", "w") as rf:
+if not os.path.exists("output"):
+    os.makedirs("output")
+
+with open("output/cost_stats.txt", "w") as rf:
     rf.write("The average amount spent per day is $%.2f.\n"%(grandTotal / num_of_days))
     rf.write("The average amount spent per month is $%.2f.\n"%(grandTotal / num_of_days * 30.436875))
     rf.write("The average amount spent per year is $%.2f."%(grandTotal / num_of_days * 365.25))
 
-plt.savefig('cost_graph.png')
-subprocess.run(['open', "cost_stats.txt"], check=True)
-subprocess.run(['open', "cost_graph.png"], check=True)
+plt.savefig('output/cost_graph.png')
+subprocess.run(['open', "output/cost_stats.txt"], check=True)
+subprocess.run(['open', "output/cost_graph.png"], check=True)
 
 os._exit(0)
 
