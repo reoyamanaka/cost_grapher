@@ -54,9 +54,7 @@ last_year, last_month, last_day = int(last_year), int(last_month), int(last_day)
 first_date = date(first_year, first_month, first_day)
 last_date = date(last_year, last_month, last_day)
 delta = last_date - first_date
-num_of_days = delta.days + 2
-
-num_of_days = delta.days if num_of_days > 0 else 365.25 + num_of_days
+num_of_days = delta.days + 1
 
 if not os.path.exists("output"):
     os.makedirs("output")
