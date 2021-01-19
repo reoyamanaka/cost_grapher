@@ -18,7 +18,7 @@ for key in costDict.keys():
     costDict[key] = sum(costTypePriceList)
     
 grandTotal = sum([value for value in costDict.values()])
-foodTotal = costDict['grocery'] + costDict['takeout'] + costDict['restaurant']
+foodTotal = costDict['grocery'] + costDict['takeout']
 
 costDict['food total'] = foodTotal
 costDict["total"] = grandTotal
@@ -54,7 +54,9 @@ last_year, last_month, last_day = int(last_year), int(last_month), int(last_day)
 first_date = date(first_year, first_month, first_day)
 last_date = date(last_year, last_month, last_day)
 delta = last_date - first_date
-num_of_days = delta.days + 1
+num_of_days = delta.days + 2
+
+num_of_days = delta.days + 1 if num_of_days > 0 else 365.25 + num_of_days
 
 if not os.path.exists("output"):
     os.makedirs("output")
