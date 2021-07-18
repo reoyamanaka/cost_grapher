@@ -61,12 +61,11 @@
 ## About The Project
 
 <p align="left">
-  <img src="images/0.png" width="729" height="330">
+  <img src="images/0.png">
 </p>
 
 ### Built With
 
-* macOS High Sierra Version 10.13.6
 * Adobe Illustrator Version 23.1 (Logo design)
 * Python 3.8.1
 
@@ -116,7 +115,7 @@ To get a local copy up and running follow these simple steps.
 <div align="center">
   <strong>YouTube Demo</strong><br>
   <a href="https://youtu.be/yDaQAHXgQ9Y" target="_blank">
-    <img src="http://i3.ytimg.com/vi/yDaQAHXgQ9Y/hqdefault.jpg" alt="Thumbnail" width="560" height="315">
+    <img src="http://i3.ytimg.com/vi/yDaQAHXgQ9Y/hqdefault.jpg" alt="Thumbnail">
   </a>
 </div>
 
