@@ -95,18 +95,10 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/reoyamanaka/cost_visualizer.git
    ```
-2. Install pandas
+2. Install requirements
      ```sh
-     pip install pandas
+     pip install -r requirements.txt
      ```
-3. Install numpy
-   ```sh
-   pip install numpy
-   ```
-4. Install matplotlib
-   ```sh
-   pip install matplotlib
-   ```
 
 
 <!-- USAGE -->
